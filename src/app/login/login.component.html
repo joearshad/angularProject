@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="Form my-4 mx-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-7 px-5 pt-5">
+                    <h4>Welcome to the best Movie App</h4>
+                    <br>
+                    <form id="form" action="#">
+                        <div class="form-group">
+                            <div class="col-lg-7">
+                                <input [(ngModel)]="email" type="text" name="email" id="email"
+                                    placeholder="email" class="input-group form-control my-0 p-4"
+                                    (keydown)="validateEmail(ngOnInit)"><!-- <h3>// $even.target</h3> -->
+                                <input [(ngModel)]="text" [style.color]="color" [style.background]="background"
+                                    type="text" name="text" id="text" class="input-group px-5 border-0"
+                                    placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-7">
+                                <input [(ngModel)]="password" type="password" name="password" id="password"
+                                    placeholder="password" class="input-group form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-7">
+                                <br>
+                                <button type="button" id="button" class="btn btn-primary" (click)="validateAccount()">
+                                    Login </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body><!-- <p [innerText]="allowinput"></p> -->
+
+</html>

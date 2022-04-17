@@ -1,0 +1,11 @@
+<div class="card" style="width: 40rem; margin-bottom: 5rem;">
+  <img src="https://www.themoviedb.org/t/p/w1280{{movie.poster_path}}" />
+  <div class="card-body">
+    <h5 class="card-title">{{movie.title}}</h5>
+    <div fxLayoutGap="row" fxLayoutAlign="space-around center">
+      <p class="card-text">{{movie.popularity}}</p>
+      <p class="card-text">{{movie.overview}}</p>
+    </div>
+    <a [routerLink]="['/movies']" class="btn btn-primary">back</a>
+  </div>
+</div>
